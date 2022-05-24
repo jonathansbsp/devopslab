@@ -68,5 +68,6 @@ jobs:
       - name: Push to Heroku & Deploy
         run: git push heroku HEAD:main --force
 
+      # Fix CSRF
       - name: Install Requirements
         run:  pip install flask flask-wtf
